@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+.home {
+    height: 100vh;
+    background-color: antiquewhite;
+    color: white;
+    padding-left: 150px;
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 90%;
+    padding: 10px;
+    align-items: center;
+    top: 20px;
+    padding: 5px 15px;
+    justify-self: center;
+    transition: all 1s;
+    z-index: 9999;
+    padding: 0px;
+
+
+}
+
+
+#down {
+    display: none;
+}
+
+
+
+.right a {
+    position: relative;
+    padding: 5px 8px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
+span {
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.cbut {
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    width: 150px;
+    border: 0px;
+    border-top: 2px solid white;
+    box-shadow: 1px 10px 10px 6px gray;
+    margin: 0px 50px;
+    transition: none;
+    outline-color: black;
+}
+
+.contrn::after,
+.contrn::before {
+    display: none;
+}
+
+.cbut a::before,
+.cbut a::after {
+    background-color: none;
+
+
+}
+
+
+
+
+.right a {
+    position: relative;
+    padding: 8px 15px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+}
+
+
+.right a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: aqua;
+    transition: width 0.4s linear;
+}
+
+
+.right a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 0%;
+    background: aqua;
+    transition: width 0.4s linear 0.2s;
+}
+
+
+.right a .line-left,
+.right a .line-right {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 0%;
+    background: aqua;
+    transition: height 0.4s linear;
+}
+
+.right a .line-left {
+    left: 0;
+    top: 0;
+
+}
+
+.right a .line-right {
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.right a:hover::before {
+    width: 100%;
+}
+
+.right a:hover::after {
+    width: 100%;
+}
+
+.right a:hover .line-left,
+.right a:hover .line-right {
+    height: 100%;
+}
+
+
+nav div:last-child {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./black-carbon-fiber-texture-pattern-background_1017-33436.avif);
+}
+
+.education {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 60px;
+    padding-top: 5vh;
+
+    background-image: url(./black-carbon-fiber-texture-pattern-background_1017-33436.avif);
+}
+
+.education h1 {
+    text-align: center;
+    text-decoration: dashed underline;
+    color: white;
+    height: 11vh;
+    font-size: 50px;
+}
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    padding-top: 5vh;
+    background-image: url(./black-carbon-fiber-texture-pattern-background_1017-33436.avif);
+}
+
+.contact h1 {
+    text-align: center;
+    text-decoration: dashed underline;
+    color: white;
+    height: 11vh;
+    font-size: 50px;
+}
+
+.projects {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    padding-top: 5vh;
+
+    padding: 70px 40px;
+    background-image: url(./black-carbon-fiber-texture-pattern-background_1017-33436.avif);
+}
+
+.projects h1 {
+    text-align: center;
+    text-decoration: dashed underline;
+    color: white;
+    height: 11vh;
+    font-size: 50px;
+}
+
+.skills {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 60px;
+
+
+    background-image: url(./black-carbon-fiber-texture-pattern-background_1017-33436.avif);
+}
+
+.about {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 60px;
+    padding-top: 5vh;
+
+    background-image: url(./black-carbon-fiber-texture-pattern-background_1017-33436.avif);
+}
+
+.about h1 {
+    text-align: center;
+    text-decoration: dashed underline;
+    color: white;
+    height: 15vh;
+    font-size: 50px;
+
+}
+
+.skills h1 {
+    text-align: center;
+    text-decoration: dashed underline;
+    color: white;
+    height: 10vh;
+    font-size: 50px;
+
+}
+
+.a2 {
+    display: flex;
+}
+
+.home {
+    background-color: black;
+    position: relative;
+
+    justify-content: start;
+    overflow: hidden;
+}
+
+.hpic2 {
+    height: 75%;
+    position: absolute;
+    z-index: 99;
+    /* background: none; */
+    right: 10px;
+    bottom: 0px;
+
+}
+
+.hpic1 {
+    position: absolute;
+    transform: rotate(270deg);
+    /* height:50%;
+    width:20%; */
+    right: 96px;
+    top: 109px;
+    clip-path: polygon(50% 51%, 0% 100%, 100% 100%);
+
+
+}
+
+.htxt {
+    font-size: 20px;
+    color: white;
+}
+
+.but {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: aqua;
+    color: white;
+}
+
+
+
+.about {
+    background-color: gold;
+    width: 100%;
+
+}
+
+.aleft {
+    width: 50%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.aleftimg1 {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+}
+
+.aleftimg2 {
+    position: absolute;
+    right: 180px;
+    bottom: 10px;
+}
+
+
+
+.aright {
+    width: 50%;
+    position: relative;
+    min-height: 85vh;
+}
+
+
+.container {
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+    perspective: 500px;
+}
+
+.cube {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-100px) rotateX(35deg) rotateY(-47deg);
+    animation: cube 15s linear infinite;
+}
+
+@keyframes cube {
+    0% {
+        transform: translateZ(-100px) rotateX(35deg) rotateY(-47deg);
+    }
+
+    50% {
+        transform: translateZ(-100px) rotateX(35deg) rotateY(113deg);
+    }
+
+    100% {
+        transform: translateZ(-100px) rotateX(35deg) rotateY(313deg);
+    }
+}
+
+.cube_faces {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    backface-visibility: hidden;
+}
+
+.box {
+    height: 61.5px;
+    border-radius: 1px;
+    border-top-left-radius: 2px;
+    border: 2px solid white;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: rotateY(-180deg) translateZ(99px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(99px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(99px);
+}
+
+.cright {
+    transform: rotateY(90deg) translateZ(99px);
+}
+
+.left {
+    transform: rotatey(-90deg) translateZ(99.2px);
+}
+
+.name {
+    height: 80px;
+    width: 280px;
+    font-family: "Londrina Outline";
+    color: white;
+}
+
+article {
+    display: flex;
+    gap: 5px;
+}
+
+article span {
+    font-size: 55px;
+    opacity: 0;
+    transform: translateX(40px);
+    animation: rtl 4s ease both;
+    animation-iteration-count: infinite;
+}
+
+/* Delay for each letter */
+article span:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+article span:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+article span:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+article span:nth-child(4) {
+    animation-delay: 1.4s;
+}
+
+article span:nth-child(5) {
+    animation-delay: 1.8s;
+}
+
+article span:nth-child(6) {
+    animation-delay: 2.2s;
+}
+
+article span:nth-child(7) {
+    animation-delay: 2.4s;
+}
+
+article span:nth-child(8) {
+    animation-delay: 2.8s;
+}
+
+@keyframes rtl {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.projects {
+    background-color: aqua;
+}
+
+
+input:checked~.right {
+    left: 5%;
+    background-color: black;
+    color: white;
+}
+
+.aright p {
+    font-size: 25px;
+    color: white;
+    line-height: 45px;
+}
+
+@media only screen and (max-width:900px) {
+    .right {
+        transition: all 1s;
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        width: 90%;
+        flex-direction: column;
+        height: 70vh;
+        padding: 30px;
+        border-radius: 30px;
+        gap: 30px;
+        background-color: white;
+    }
+
+
+}
+
+
+
+.gamat1 {
+    transform: rotate(180deg);
+    position: absolute;
+    left: -28px;
+    top: 150px;
+}
+
+.gamat2 {
+    transform: rotate(180deg);
+    position: absolute;
+    left: -52px;
+    top: 150px;
+}
+
+.gamab2 {
+
+    position: absolute;
+    right: 100px;
+    top: 295px;
+}
+
+.gamab1 {
+
+    position: absolute;
+    right: 75px;
+    top: 295px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+
+}
+
+.skill-pic {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 150px;
+
+}
+
+.skill-pic img {
+    width: 20%;
+    height: 45%;
+}
+
+.skill-pic img:hover {
+    transform: scaleX(1.1);
+}
+
+
+
+
+.project {
+
+    width: 100%;
+    padding: 100px;
+
+}
+
+
+
+.project-box-1 {
+    width: 100%;
+    margin-top: 230px;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.first-img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transform: skewY(-10deg);
+    transition: 2s;
+}
+
+.first-img:hover {
+    transform: translateY(70px);
+    transition: 2s;
+}
+
+.project-hover {
+    position: absolute;
+}
+
+.first-img .p-front {
+    width: 100%;
+    height: 100%;
+}
+
+.first-img .p-back:hover {
+    transform: translateY(-250px);
+    transition: all 2s ease-in-out;
+}
+
+.first-img .p-front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.first-img .p-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 35%;
+    backdrop-filter: blur(5px);
+    border: 5px solid black;
+    transition: all 2s ease-in-out;
+    position: relative;
+    bottom: 4px;
+    right: 4px;
+
+}
+
+.first-img .p-back:hover {
+    border: 5px solid white;
+    transition: all 2s ease-in-out;
+}
+
+.first-img .p-back p {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    color: black;
+}
+
+.first-img .p-back p:hover {
+    color: white;
+    transition: all 1.5s ease-in-out;
+}
+
+.project .content {
+    width: 900px;
+    color: white;
+
+}
+
+.project .content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 0px 10px 5px;
+}
+
+.project .content p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    text-align: justify;
+    padding: 10px;
+    line-height: 37px;
+}
+
+.project .content button {
+    padding: 2px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-hr {
+    margin-top: 100px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+.mark {
+    background-color: transparent;
+    min-height: 100%;
+    width: 30%;
+}
+
+.pc {
+
+    height: 75%;
+    width: 100%;
+}
+
+.piechart h2 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+
+}
+
+.coapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    width: 100%;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.circle img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.circle {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.circle {
+    border-radius: 50%;
+    height: 100%;
+    width: 30%;
+}
+
+/* .skill-pic .s4{
+        width: 40%;
+     } */
+
+
+@media only screen and (min-width:600px) and (max-width:900px) {
+    body {
+        width: 100%;
+    }
+
+    .overall {
+        width: 100%;
+    }
+
+    .home {
+        position: relative;
+        height: 135vh;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .hpic2 {
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        bottom: 430px;
+        right: 110px;
+    }
+
+    .but {
+        position: absolute;
+        bottom: -740px;
+    }
+
+    .htxt {
+        position: absolute;
+        bottom: -650px;
+        font-size: 20px;
+    }
+
+    .home div {
+        position: absolute;
+        top: 100px;
+    }
+
+    .a2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aleft,
+    .aright {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .skill-pic img {
+        width: 40%;
+        height: 25%;
+
+    }
+
+    .skills {
+        height: 150vh;
+    }
+
+    .skill-pic {
+        height: 140vh;
+        gap: 0px;
+
+    }
+
+    .s4 {
+        width: 40%;
+    }
+
+    .circle img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+
+    .home,
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .contact {
+        width: 173%;
+    }
+
+    nav {
+        width: 50%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .overall {
+        width: 100%;
+    }
+
+    .home {
+        position: relative;
+        height: 135vh;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    .hpic2 {
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        bottom: 360px;
+        right: -25px;
+    }
+
+    .but {
+        position: absolute;
+        bottom: -740px;
+        left: -60px;
+    }
+
+    .htxt {
+        position: absolute;
+        bottom: -650px;
+        font-size: 20px;
+        left: -60px;
+    }
+
+    .home div {
+        position: absolute;
+        top: 100px;
+    }
+
+    .a2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .aleft,
+    .aright {
+        width: 100%;
+        padding: 50px;
+
+    }
+
+    .skill-pic {
+        width: 80%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .project-box-1 {
+        flex-direction: column;
+    }
+
+    h2 {
+        margin-top: 160px;
+    }
+
+    .piechart {
+        flex-direction: column;
+    }
+
+    .piechart h2 {
+        margin: 0%;
+    }
+
+    .coapp {
+        flex-direction: column;
+    }
+}
